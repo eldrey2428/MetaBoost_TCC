@@ -1,0 +1,568 @@
+:root {
+    --main--color: #88d3d9;
+    --black: #13131a;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /*text-transform: capitalize;*/
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: #000000;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: var(--main--color);
+    border-bottom: 0.1rem solid var(--main--color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.btn {
+    background: var(--main--color);
+    color: #000000;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn-conheca {
+    background: var(--main--color);
+    color: #000000;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn-responsivo {
+    background: var(--main--color);
+    color: #000000;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.button:hover {
+    letter-spacing: 0.1rem;
+    transition:  0.3s, color 0.3s;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.home-container {
+    background: url("./img/Home.jpg");
+    height: 105vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.content h2 {
+    color: #88d3d9;
+    font-size: 8rem;
+}
+
+.content h3 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+.content p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    padding: 1rem 0;
+}
+
+.title {
+    font-size: 5rem;
+    color: var(--main--color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.title span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    padding: 30px;
+    border-radius: 10px;
+    gap: 1.5rem;
+}
+
+.about .row .content {
+    padding: 2rem;
+}
+
+.about .row .content  h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content  p {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .box-container .box img {
+    height: 20rem;
+}
+
+.menu .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+    background-color: #fff;
+}
+
+.menu .box-container .box:hover>* {
+    color: #000000;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1px;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.53rem;
+}
+
+.footer .share img:hover {
+    background-color: var(--main--color);
+    transform: scale(1.1);
+}
+
+.anuncio-img img {
+    width: 100%;        /* ocupa todo o container */
+    height: 400px;      /* altura fixa para todos os anuncios */
+    border-radius: 10px;
+    object-fit: cover;  /* mantém a proporção e corta o excesso se necessário */
+}
+
+
+.anuncio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: flex-start;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: 10px;
+    background-color: var(--black);
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+.anuncio-img {
+    position: relative;
+    text-align: center;
+}
+
+.anuncio-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.badge-esgotado {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(220,53,69,0.85);
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 1.4rem;
+}
+
+.anuncio-info h1 {
+    font-size: 3rem;
+    color: var(--main--color);
+    margin-bottom: 1rem;
+}
+
+.anuncio-info .descricao {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.anuncio-info .preco {
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.esgotado-btn {
+    background: #555;
+    cursor: not-allowed;
+}
+
+.alert {
+        padding: 3rem;
+        border-radius: 2px;
+        font-weight: bold;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /* Estilo para alerta de erro */
+    .alert-warning {
+        background-color: #f39c12; /* laranja */
+        color: #000; /* texto preto */
+        
+    }
+
+    /* Estilo para alerta de erro fatal */
+    .alert-danger {
+        background-color: #e74c3c; /* vermelho */
+        color: #fff; /* texto branco */
+    }
+
+    /* Estilo para alerta de sucesso */
+    .alert-success {
+        background-color: #2ecc71; /* verde */
+        color: #000; /* texto preto */
+    }
+
+    /* Caso queira uma borda mais visível nos alertas */
+    .alert-warning,
+    .alert-danger,
+    .alert-success {
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+
+    .anuncio-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;      /* Mostra a imagem inteira */
+    background-color: #13131A;   /* Preenche espaço vazio com fundo preto */
+    border-radius: 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsividade começa a partir de 1180px para baixo */
+@media (max-width: 1180px) {
+  .content h2 { font-size: 6rem; }
+  .content h3 { font-size: 3.5rem; }
+  .content p { font-size: 1.8rem; }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .anuncio-container {
+    grid-template-columns: 1fr; /* vira uma coluna só */
+    margin-top: 100px;
+  }
+
+  .anuncio-img img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .anuncio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Ajustes para telas ainda menores */
+@media (max-width: 768px) {
+  .content h2 { font-size: 4.5rem; }
+  .content h3 { font-size: 2.8rem; }
+  .content p { font-size: 1.6rem; }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .btn-responsivo {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+  
+  .anuncio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .content h2 { font-size: 3rem; }
+  .content h3 { font-size: 2rem; }
+  .content p { font-size: 1.4rem; }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .alert {
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
+}
+
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Esconde menu no mobile */
+@media (max-width: 890px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 70px; /* altura do header */
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: 1.6rem;
+  }
+
+  .navbar.active {
+    display: flex; /* Mostra quando ativo */
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-right: 9px;
+  }
+}
+
+/* garante referência para posicionamento absoluto do botão */
+.header section { position: relative; }
+
+/* Botão hamburguer (base) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 300;
+}
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+/* Transformação para X quando aberto */
+.menu-toggle.open span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+.menu-toggle.open span:nth-child(2) { opacity: 0; }
+.menu-toggle.open span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+/* Regras responsivas */
+@media (max-width: 890px) {
+    .navbar {
+    display: none !important; /* escondido no mobile por padrão */
+    }
+
+    .menu-toggle {
+    display: flex;
+    position: absolute;
+    right: 18px;           /* canto direito do header */
+    top: 50%;
+    transform: translateY(-50%);
+    }
+
+    /* quando ativo, mostra o nav como dropdown */
+    .navbar.active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 16px;
+    background: #000;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: var(--border);
+    gap: 0.6rem;
+    min-width: 160px;
+    z-index: 250;
+    }
+
+    .navbar.active a {
+    margin: 0;
+    padding: 6px 8px;
+    font-size: 1.6rem;
+    }
+
+    /* evita que os ícones fiquem cobertos pelo botão (ajuste simples) */
+    .icons {
+    margin-right: 56px;
+    }
+}
